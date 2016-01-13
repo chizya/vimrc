@@ -1,0 +1,308 @@
+# Configuration file for the color ls utility
+# This file goes in the /etc directory, and must be world readable.
+# You can copy this file to .dir_colors in your $HOME directory to override
+# the system defaults.
+
+# COLOR needs one of these arguments: 'tty' colorizes output to ttys, but not
+# pipes. 'all' adds color characters to all output. 'none' shuts colorization
+# off.
+COLOR tty
+
+# Extra command line options for ls go here.
+# Basically these ones are:
+#  -F = show '/' for dirs, '*' for executables, etc.
+#  -T 0 = don't trust tab spacing when formatting ls output.
+OPTIONS -F -T 0
+
+# Below, there should be one TERM entry for each termtype that is colorizable
+TERM linux
+TERM console
+TERM con132x25
+TERM con132x30
+TERM con132x43
+TERM con132x60
+TERM con80x25
+TERM con80x28
+TERM con80x30
+TERM con80x43
+TERM con80x50
+TERM con80x60
+TERM cons25
+TERM xterm
+TERM rxvt
+TERM xterm-color
+TERM color-xterm
+TERM vt100
+TERM dtterm
+TERM color_xterm
+TERM ansi
+TERM screen
+TERM screen.linux
+TERM kon
+TERM kterm
+TERM gnome
+TERM konsole
+
+# EIGHTBIT, followed by '1' for on, '0' for off. (8-bit output)
+EIGHTBIT 1
+
+# Below are the color init strings for the basic file types. A color init
+# string consists of one or more of the following numeric codes:
+# Attribute codes: 
+# 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
+# Text color codes:
+# 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
+# Background color codes:
+# 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
+NORMAL 00	# global default, although everything should be something.
+FILE 00 	# normal file
+DIR 01;34 	# directory
+LINK 01;36 	# symbolic link
+FIFO 40;33	# pipe
+SOCK 01;35	# socket
+BLK 40;33;01	# block device driver
+CHR 40;33;01 	# character device driver
+ORPHAN 01;05;37;41  # orphaned syminks
+MISSING 01;05;37;41 # ... and the files they point to
+
+# This is for files with execute permission:
+EXEC 01;32 
+
+# List any file extensions like '.gz' or '.tar' that you would like ls
+# to colorize below. Put the extension, a space, and the color init string.
+# (and any comments you want to add after a '#')
+.cmd 01;32 # executables (bright green)
+.exe 01;32
+.com 01;32
+.btm 01;32
+.bat 01;32
+.sh  01;32
+.csh 01;32
+.py  01;32
+.pl  01;32
+.tar 01;31 # archives or compressed (bright red)
+.tgz 01;31
+.arj 01;31
+.taz 01;31
+.lzh 01;31
+.zip 01;31
+.z   01;31
+.Z   01;31
+.gz  01;31
+.bz2 01;31
+.bz  01;31
+.tz  01;31
+.rpm 01;31
+.cpio 01;31
+.jpg 01;35 # image formats (magenta)
+.gif 01;35
+.bmp 01;35
+.xbm 01;35
+.xpm 01;35
+.png 01;35
+.tif 01;35
+.log 00;36 # logs (cyan)
+.rpt 00;36
+.v   00;35 # verilog codes (magenta)
+.vh  00;35
+.vp  00;35
+.000 00;00
+.001 00;01
+.002 00;02
+.003 00;03
+.004 00;04
+.005 00;05
+.006 00;06
+.007 00;07
+.008 00;08
+.009 00;09
+.010 00;10
+.011 00;11
+.012 00;12
+.013 00;13
+.014 00;14
+.015 00;15
+.016 00;16
+.017 00;17
+.018 00;18
+.019 00;19
+.020 00;20
+.021 00;21
+.022 00;22
+.023 00;23
+.024 00;24
+.025 00;25
+.026 00;26
+.027 00;27
+.028 00;28
+.029 00;29
+.030 00;30
+.031 00;31
+.032 00;32
+.033 00;33
+.034 00;34
+.035 00;35
+.036 00;36
+.037 00;37
+.038 00;38
+.039 00;39
+.040 00;40
+.041 00;41
+.042 00;42
+.043 00;43
+.044 00;44
+.045 00;45
+.046 00;46
+.047 00;47
+.048 00;48
+.049 00;49
+.050 00;50
+.051 00;51
+.052 00;52
+.053 00;53
+.054 00;54
+.055 00;55
+.056 00;56
+.057 00;57
+.058 00;58
+.059 00;59
+.060 00;60
+.061 00;61
+.062 00;62
+.063 00;63
+.064 00;64
+.065 00;65
+.066 00;66
+.067 00;67
+.068 00;68
+.069 00;69
+.070 00;70
+.071 00;71
+.072 00;72
+.073 00;73
+.074 00;74
+.075 00;75
+.076 00;76
+.077 00;77
+.078 00;78
+.079 00;79
+.080 00;80
+.081 00;81
+.082 00;82
+.083 00;83
+.084 00;84
+.085 00;85
+.086 00;86
+.087 00;87
+.088 00;88
+.089 00;89
+.090 00;90
+.091 00;91
+.092 00;92
+.093 00;93
+.094 00;94
+.095 00;95
+.096 00;96
+.097 00;97
+.098 00;98
+.099 00;99
+.100 01;00
+.101 01;01
+.102 01;02
+.103 01;03
+.104 01;04
+.105 01;05
+.106 01;06
+.107 01;07
+.108 01;08
+.109 01;09
+.110 01;10
+.111 01;11
+.112 01;12
+.113 01;13
+.114 01;14
+.115 01;15
+.116 01;16
+.117 01;17
+.118 01;18
+.119 01;19
+.120 01;20
+.121 01;21
+.122 01;22
+.123 01;23
+.124 01;24
+.125 01;25
+.126 01;26
+.127 01;27
+.128 01;28
+.129 01;29
+.130 01;30
+.131 01;31
+.132 01;32
+.133 01;33
+.134 01;34
+.135 01;35
+.136 01;36
+.137 01;37
+.138 01;38
+.139 01;39
+.140 01;40
+.141 01;41
+.142 01;42
+.143 01;43
+.144 01;44
+.145 01;45
+.146 01;46
+.147 01;47
+.148 01;48
+.149 01;49
+.150 01;50
+.151 01;51
+.152 01;52
+.153 01;53
+.154 01;54
+.155 01;55
+.156 01;56
+.157 01;57
+.158 01;58
+.159 01;59
+.160 01;60
+.161 01;61
+.162 01;62
+.163 01;63
+.164 01;64
+.165 01;65
+.166 01;66
+.167 01;67
+.168 01;68
+.169 01;69
+.170 01;70
+.171 01;71
+.172 01;72
+.173 01;73
+.174 01;74
+.175 01;75
+.176 01;76
+.177 01;77
+.178 01;78
+.179 01;79
+.180 01;80
+.181 01;81
+.182 01;82
+.183 01;83
+.184 01;84
+.185 01;85
+.186 01;86
+.187 01;87
+.188 01;88
+.189 01;89
+.190 01;90
+.191 01;91
+.192 01;92
+.193 01;93
+.194 01;94
+.195 01;95
+.196 01;96
+.197 01;97
+.198 01;98
+.199 01;99

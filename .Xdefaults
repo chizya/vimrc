@@ -1,0 +1,11 @@
+xterm*geometry: 120x50
+xterm*foreground: rgb:d0/d0/d0
+xterm*background: rgb:12/12/12
+xterm*rightScrollBar: True
+xterm*saveLines: 10000
+xterm*font: -*-bitstream vera sans mono-medium-r-*-*-*-*-*-*-*-*-*-*
+xterm*boldFont: *-bitstream vera sans mono-bold-r-*-*-*-*-*-*-*-*-*-*
+xterm*faceName: Bitstream Vera sans mono
+xterm*faceSize: 10
+emacs.geometry: 120x50
+
